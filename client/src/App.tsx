@@ -47,7 +47,7 @@ function App() {
   }
   return (
     <>
-    <p>Your transaction signature - {txnSignature}</p>
+    <p>Your transaction signature -{txnSignature}</p>
     <input onChange={((e)=>{
       setFromPubKey(e.target.value)
     })} type='text' placeholder='from' />
@@ -62,6 +62,7 @@ function App() {
     <br />
     <button onClick={Send} >Send</button>
     </>
+
     
   )
 }
